@@ -1,0 +1,34 @@
+{
+  "author": "Shaun (https://github.com/shaunidiot)",
+  "name": "owl.js",
+  "description": "A Node.js library for the OverwatchLeague API",
+  "version": "0.0.1",
+  "homepage": "https://github.com/shaunidiot/owl.js",
+  "license": "MIT",
+  "keywords": [
+    "blizzard",
+    "battlenet",
+    "battle.net",
+    "bnet",
+    "api",
+    "overwatch",
+    "overwatchleague"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shaunidiot/owl.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shaunidiot/owl.js/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.17.1"
+  },
+  "files": [
+    "lib/",
+    "README.md",
+    "LICENSE",
+    "index.js"
+  ]
+}
