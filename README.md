@@ -1,24 +1,24 @@
-# owl.js
+# overwatchleague.js
 OverwatchLeague API. Inspired by [blizzard.js](https://github.com/benweier/blizzard.js) and [OWLeagueLib](https://github.com/overtools/OWLeagueLib/).
 
 ## Install
 
-Install `owl.js` 
+Install `overwatchleague.js` 
 
 With yarn:
 
-    $ yarn add owl.js
+    $ yarn add overwatchleague.js
 
 With npm:
 
-    $ npm install owl.js --save
+    $ npm install overwatchleague.js --save
 
 ## Usage
 
-1. `require()` *owl.js* within your application:
+1. `require()` *overwatchleague.js* within your application:
 
 ```javascript
-const OWL= require('owl.js');
+const OWL= require('overwatchleague.js');
 ```
 
 2. Call the API method of your choice listed below
