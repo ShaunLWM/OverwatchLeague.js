@@ -1,4 +1,6 @@
 # overwatchleague.js
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/shaunidiot/OverwatchLeague.js.svg)](https://greenkeeper.io/)
 OverwatchLeague API. Inspired by [blizzard.js](https://github.com/benweier/blizzard.js) and [OWLeagueLib](https://github.com/overtools/OWLeagueLib/).
 
 ## Install
