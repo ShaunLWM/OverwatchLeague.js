@@ -41,3 +41,4 @@ OWL.getSchedule().then(response => {
 - `getStandings` - Retrieve team standings (division info, player info, etc)
 - `getVideos` - Retrieve VODs
 - `getPlayerStats` - Get overall player stats
+- `getUpcomingLiveMatches` - Get upcoming live matches

@@ -53,4 +53,8 @@ OverwatchLeague.prototype.getPlayerStats = function () {
     return this.axios.get('stats/players');
 };
 
+OverwatchLeague.prototype.getUpcomingLiveMatches = function () {
+    return this.axios.get('live-match?expand=team.content&locale=en-us');
+};
+
 module.exports = new OverwatchLeague();
