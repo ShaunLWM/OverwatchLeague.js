@@ -43,4 +43,4 @@ OWL.getSchedule().then(response => {
 - `getVideos` - Retrieve VODs
 - `getPlayerStats` - Get overall player stats
 - `getUpcomingLiveMatches` - Get upcoming live matches
-- `getMaps` - Get upcoming live matches
+- `getMaps` - Get all maps in pool
