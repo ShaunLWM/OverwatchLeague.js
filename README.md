@@ -35,6 +35,7 @@ OWL.getSchedule().then(response => {
 - `getMatch(id)` - Get match's information
 - `getMatchStats(mapId, mapNumber)` - Get map information for particular match. [Example](https://api.overwatchleague.com/stats/matches/10528/maps/1): where `10528` is the `matchId` and `1` is the `mapNumber`
 - `getTeam(id)` - Get team's information
+- `getTeams` - Get all team's information
 - `getNews` - Retrieve latest site's news
 - `getPlaylistVideos(name)` - Retrieve playlist
 - `getRankings` - Retrieve team rankings (games won, games lost, etc)
