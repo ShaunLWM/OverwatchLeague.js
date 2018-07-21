@@ -1,5 +1,4 @@
 var axios = require('axios');
-
 var OverwatchLeague = function OverwatchLeague() {
     this.axios = axios.create({
         baseURL: 'https://api.overwatchleague.com/',
@@ -44,6 +43,10 @@ OverwatchLeague.prototype.getStandings = function () {
 
 OverwatchLeague.prototype.getVideos = function () {
     return this.axios.get('vods');
+};
+
+OverwatchLeague.prototype.getMatchStats = function (matchId, mapNumber) {
+    return this.axios.get(`stats/matches/${matchId}/maps/${mapNumber}`);
 };
 
 module.exports = new OverwatchLeague();
