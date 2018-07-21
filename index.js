@@ -61,4 +61,8 @@ OverwatchLeague.prototype.getUpcomingLiveMatches = function () {
     return this.axios.get('live-match?expand=team.content&locale=en-us');
 };
 
+OverwatchLeague.prototype.getMaps = function () {
+    return this.axios.get('maps');
+};
+
 module.exports = new OverwatchLeague();
