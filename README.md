@@ -40,3 +40,4 @@ OWL.getSchedule().then(response => {
 - `getRankings` - Retrieve team rankings (games won, games lost, etc)
 - `getStandings` - Retrieve team standings (division info, player info, etc)
 - `getVideos` - Retrieve VODs
+- `getPlayerStats` - Get overall player stats
