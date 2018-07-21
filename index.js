@@ -19,11 +19,11 @@ OverwatchLeague.prototype.getLiveStreams = function () {
 };
 
 OverwatchLeague.prototype.getMatch = function (id) {
-    return this.axios.get('match/' + id);
+    return this.axios.get(`match/${id}`);
 };
 
 OverwatchLeague.prototype.getTeam = function (id) {
-    return this.axios.get('team/' + id);
+    return this.axios.get(`team/${id}`);
 };
 
 OverwatchLeague.prototype.getNews = function () {
@@ -31,7 +31,7 @@ OverwatchLeague.prototype.getNews = function () {
 };
 
 OverwatchLeague.prototype.getPlaylistVideos = function (name) { // todo: are we the app?
-    return this.axios.get('playlist/' + name);
+    return this.axios.get(`playlist/${name}`);
 };
 
 OverwatchLeague.prototype.getRankings = function () {
