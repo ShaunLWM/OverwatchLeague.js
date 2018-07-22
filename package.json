@@ -2,7 +2,7 @@
   "author": "Shaun (https://github.com/shaunidiot)",
   "name": "overwatchleague.js",
   "description": "A Node.js library for the OverwatchLeague API",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/shaunidiot/OverwatchLeague.js",
   "license": "MIT",
   "keywords": [

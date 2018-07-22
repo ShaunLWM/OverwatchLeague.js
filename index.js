@@ -25,7 +25,7 @@ OverwatchLeague.prototype.getTeam = function (id) {
     return this.axios.get(`team/${id}`);
 };
 
-OverwatchLeague.prototype.getTeams = function (id) {
+OverwatchLeague.prototype.getTeams = function () {
     return this.axios.get(`teams?expand=team.content&locale=en_US`);
 };
 
