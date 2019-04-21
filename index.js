@@ -53,7 +53,7 @@ OverwatchLeague.prototype.getMatchStats = function (matchId, mapNumber) {
     return this.axios.get(`stats/matches/${matchId}/maps/${mapNumber}`);
 };
 
-OverwatchLeague.prototype.getPlayerStats = function () {
+OverwatchLeague.prototype.getPlayers = function () {
     return this.axios.get('stats/players');
 };
 
