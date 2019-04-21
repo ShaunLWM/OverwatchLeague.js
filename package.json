@@ -1,9 +1,9 @@
 {
-  "author": "Shaun (https://github.com/shaunidiot)",
+  "author": "Shaun (https://github.com/ShaunLWM)",
   "name": "overwatchleague.js",
   "description": "A Node.js library for the OverwatchLeague API",
-  "version": "0.0.2",
-  "homepage": "https://github.com/shaunidiot/OverwatchLeague.js",
+  "version": "0.0.3",
+  "homepage": "https://github.com/ShaunLWM/OverwatchLeague.js",
   "license": "MIT",
   "keywords": [
     "blizzard",
@@ -16,10 +16,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/shaunidiot/OverwatchLeague.js.git"
+    "url": "git://github.com/ShaunLWM/OverwatchLeague.js.git"
   },
   "bugs": {
-    "url": "https://github.com/shaunidiot/OverwatchLeague.js/issues"
+    "url": "https://github.com/ShaunLWM/OverwatchLeague.js/issues"
   },
   "main": "index.js",
   "dependencies": {
