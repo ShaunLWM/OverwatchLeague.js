@@ -1,7 +1,7 @@
 # overwatchleague.js
-[!["Latest Release"](https://img.shields.io/github/release/ShaunLWM/OverwatchLeague.js.svg)](https://github.com/ShaunLWM/OverwatchLeague.js/releases/latest)
-[!["Latest Release"](https://img.shields.io/npm/v/overwatchleague.js.svg)](https://github.com/ShaunLWM/OverwatchLeague.js/releases/latest)
-[![MIT license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/ShaunLWM/OverwatchLeague.js/blob/master/LICENSE)
+[![npm downloads](https://img.shields.io/npm/dm/overwatchleague.js.svg?style=flat-square)](http://npm-stat.com/charts.html?package=overwatchleague.js)
+[!["Latest Release"](https://img.shields.io/npm/v/overwatchleague.js.svg?style=flat-square)](https://github.com/ShaunLWM/OverwatchLeague.js/releases/latest)
+[![MIT license](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/ShaunLWM/OverwatchLeague.js/blob/master/LICENSE)
 
 OverwatchLeague API. Inspired by [blizzard.js](https://github.com/benweier/blizzard.js) and [OWLeagueLib](https://github.com/overtools/OWLeagueLib/).
 
@@ -32,7 +32,7 @@ OWL.getSchedule().then(response => {
     console.log(response.data);
 });
 ```
-or the async way (node v8 and above)
+or the async way (NodeJS v8 and above)
 ```javascript
 (async () => {
     let players = await OWL.getPlayers();
