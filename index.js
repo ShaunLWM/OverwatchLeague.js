@@ -1,72 +1,77 @@
-var axios = require("axios");
-var OverwatchLeague = function OverwatchLeague() {
-    this.axios = axios.create({
-        baseURL: "https://api.overwatchleague.com/",
-    });
-};
+const axios = require("axios");
+class OverwatchLeague {
+    constructor(locale = "en_US") {
+        this.axios = axios.create({
+            baseURL: "https://api.overwatchleague.com/",
+            params: {
+                locale
+            }
+        });
+    }
 
-OverwatchLeague.prototype.getAppData = function fetchToken(origin, params) {
-    return this.axios.get("about");
-};
+    getAppData() {
+        return this.axios.get("about");
+    };
 
-OverwatchLeague.prototype.getSchedule = function () {
-    return this.axios.get("schedule");
-};
+    getSchedule() {
+        return this.axios.get("schedule");
+    };
 
-OverwatchLeague.prototype.getLiveStreams = function () {
-    return this.axios.get("streams");
-};
+    getLiveStreams() {
+        return this.axios.get("streams");
+    };
 
-OverwatchLeague.prototype.getMatch = function (id) {
-    return this.axios.get(`match/${id}`);
-};
+    getMatch(id) {
+        return this.axios.get(`match/${id}`);
+    };
 
-OverwatchLeague.prototype.getTeam = function (id) {
-    return this.axios.get(`team/${id}`);
-};
+    getTeam(id) {
+        return this.axios.get(`team/${id}`);
+    };
 
-OverwatchLeague.prototype.getTeams = function () {
-    return this.axios.get(`teams?expand=team.content&locale=en_US`);
-};
+    getTeams() {
+        return this.axios.get(`teams?expand=team.content&locale=en_US`);
+    };
 
-OverwatchLeague.prototype.getNews = function () {
-    return this.axios.get("news");
-};
+    getNews() {
+        return this.axios.get("news");
+    };
 
-OverwatchLeague.prototype.getPlaylistVideos = function (name) { // todo: are we the app?
-    return this.axios.get(`playlist/${name}`);
-};
+    getPlaylistVideos(name) { // todo: are we the app?
+        return this.axios.get(`playlist/${name}`);
+    };
 
-OverwatchLeague.prototype.getRankings = function () {
-    return this.axios.get("ranking");
-};
+    getRankings() {
+        return this.axios.get("ranking");
+    };
 
-OverwatchLeague.prototype.getStandings = function () {
-    return this.axios.get("standings");
-};
+    getStandings() {
+        return this.axios.get("standings");
+    };
 
-OverwatchLeague.prototype.getVideos = function () {
-    return this.axios.get("vods");
-};
+    getVideos() {
+        return this.axios.get("vods");
+    };
 
-OverwatchLeague.prototype.getMatchStats = function (matchId, mapNumber) {
-    return this.axios.get(`stats/matches/${matchId}/maps/${mapNumber}`);
-};
+    getMatchStats(matchId, mapNumber) {
+        return this.axios.get(`stats/matches/${matchId}/maps/${mapNumber}`);
+    };
 
-OverwatchLeague.prototype.getPlayers = function () {
-    return this.axios.get("stats/players");
-};
+    getPlayers() {
+        return this.axios.get("stats/players");
+    };
 
-OverwatchLeague.prototype.getPlayer = function (id) {
-    return this.axios.get(`players/${id}?expand=stats,stats.ranks`);
-};
+    getPlayer(id) {
+        return this.axios.get(`players/${id}?expand=stats,stats.ranks`);
+    };
 
-OverwatchLeague.prototype.getUpcomingLiveMatches = function () {
-    return this.axios.get("live-match?expand=team.content&locale=en-us");
-};
+    getUpcomingLiveMatches() {
+        return this.axios.get("live-match?expand=team.content&locale=en-us");
+    };
 
-OverwatchLeague.prototype.getMaps = function () {
-    return this.axios.get("maps");
-};
+    getMaps() {
+        return this.axios.get("maps");
+    };
+}
 
-module.exports = new OverwatchLeague();
+module.exports = OverwatchLeague;

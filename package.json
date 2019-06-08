@@ -2,17 +2,20 @@
   "author": "Shaun (https://github.com/ShaunLWM)",
   "name": "overwatchleague.js",
   "description": "A Node.js library for the OverwatchLeague API",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/ShaunLWM/OverwatchLeague.js",
   "license": "MIT",
+  "engines": {
+    "node": ">= 8"
+  },
   "keywords": [
     "blizzard",
     "battlenet",
     "battle.net",
     "bnet",
-    "api",
     "overwatch",
-    "overwatchleague"
+    "overwatchleague",
+    "overwatchapi"
   ],
   "repository": {
     "type": "git",

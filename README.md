@@ -19,26 +19,30 @@ With npm:
 
 ## Usage
 
-1. `require()` *overwatchleague.js* within your application:
+1. `require("overwatchleague.js")` within your application:
 
 ```javascript
-const OWL= require('overwatchleague.js');
+const OverwatchLeague= require("overwatchleague.js");
+let owl = new OverwatchLeague("en_US");
 ```
 
 2. Call the API method of your choice listed below
 
 ```javascript
-OWL.getSchedule().then(response => {
+owl.getSchedule().then(response => {
     console.log(response.data);
 });
 ```
 or the async way (NodeJS v8 and above)
 ```javascript
 (async () => {
-    let players = await OWL.getPlayers();
-    console.log(players);
-});
+    let players = await owl.getPlayers();
+    console.log(players.data);
+})();
 ```
+
+## Constructor
+- `new OverwatchLeague(locale);` - set default locale (default: en_US)
 ## Methods
 - `getAppData`- Retrieve current app information
 - `getSchedule` - Retrieve upcoming matches' schedule
